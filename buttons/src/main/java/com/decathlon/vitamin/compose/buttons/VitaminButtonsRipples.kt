@@ -5,6 +5,7 @@ import androidx.compose.material.ripple.RippleAlpha
 import androidx.compose.material.ripple.RippleTheme
 import androidx.compose.runtime.Composable
 import com.decathlon.vitamin.compose.foundation.VitaminTheme
+import com.decathlon.vitamin.compose.foundation.vtmnLightColorPalette
 
 internal object VitaminButtonsRipples {
     val primary: RippleTheme
@@ -77,10 +78,20 @@ internal object VitaminButtonsRipples {
             override fun rippleAlpha(): RippleAlpha = RippleAlpha(1f, 1f, 1f, getAlpha())
         }
 
+    val card: RippleTheme
+        @Composable
+        get() = object : RippleTheme {
+            @Composable
+            override fun defaultColor() = vtmnLightColorPalette.vtmnActiveBrandReversedTransparent
+
+            @Composable
+            override fun rippleAlpha(): RippleAlpha = RippleAlpha(1f, 1f, 1f, VitaminButtonsRipples.getAlpha(0.6f))
+        }
+
     /**
      * On API 21-27 the ripple animation is split into two sections - an overlay and an
      * animation on top. Due to this split, we need to divide by 2 the original alpha.
      */
-    private fun getAlpha(alpha: Float = 1f): Float =
+    fun getAlpha(alpha: Float = 1f): Float =
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P) alpha / 2f else alpha
 }

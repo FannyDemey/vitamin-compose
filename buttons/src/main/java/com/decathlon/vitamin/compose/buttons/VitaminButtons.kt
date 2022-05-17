@@ -173,6 +173,28 @@ object VitaminButtons {
         modifier = modifier,
         onClick = onClick
     )
+
+    @Composable
+    fun CardButton(
+        text: String,
+        modifier: Modifier = Modifier,
+        icon: Painter? = null,
+        iconSide: IconSide = IconSide.LEFT,
+        enabled: Boolean = true,
+        size: ButtonSizes = VitaminButtonSizes.mediumSize(),
+        onClick: () -> Unit
+    ) = VitaminButton(
+        text = text,
+        icon = icon,
+        iconSide = iconSide,
+        enabled = enabled,
+        colors = VitaminButtonsColors.card,
+        ripples = VitaminButtonsRipples.card,
+        border = VitaminButtonsBorders.card,
+        size = size,
+        modifier = modifier,
+        onClick = onClick
+    )
 }
 
 @Composable

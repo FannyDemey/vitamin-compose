@@ -18,6 +18,7 @@ object Versions {
         const val library = "1.0.5"
         const val activity = "1.4.0"
         const val navigation = "2.4.0-rc01"
+        const val coil = "2.0.0-rc03"
     }
     object Accompanist {
         const val systemuicontroller = "0.21.3-beta"
@@ -40,6 +41,7 @@ object Dependencies {
         const val tooling = "androidx.compose.ui:ui-tooling:${Versions.Compose.library}"
         const val activity = "androidx.activity:activity-compose:${Versions.Compose.activity}"
         const val navigation = "androidx.navigation:navigation-compose:${Versions.Compose.navigation}"
+        const val coil = "io.coil-kt:coil-compose:${Versions.Compose.coil}"
     }
     object Accompanist {
         const val systemuicontroller = "com.google.accompanist:accompanist-systemuicontroller:${Versions.Accompanist.systemuicontroller}"

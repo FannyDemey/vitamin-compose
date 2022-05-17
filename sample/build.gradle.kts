@@ -58,6 +58,7 @@ dependencies {
     implementation(project(":appbars"))
     implementation(project(":tabs"))
     implementation(project(":tags"))
+    implementation(project(":cards"))
 
     implementation(Dependencies.AndroidX.appcompat)
     implementation(Dependencies.material)
@@ -65,6 +66,7 @@ dependencies {
     implementation(Dependencies.Compose.activity)
     implementation(Dependencies.Compose.navigation)
     implementation(Dependencies.Compose.tooling)
+    implementation(Dependencies.Compose.coil)
 
     implementation(Dependencies.Accompanist.systemuicontroller)
 }

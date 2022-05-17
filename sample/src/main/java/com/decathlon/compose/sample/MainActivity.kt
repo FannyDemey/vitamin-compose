@@ -11,6 +11,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.decathlon.compose.sample.screens.AppBars
 import com.decathlon.compose.sample.screens.Buttons
+import com.decathlon.compose.sample.screens.Cards
 import com.decathlon.compose.sample.screens.Checkboxes
 import com.decathlon.compose.sample.screens.Progress
 import com.decathlon.compose.sample.screens.RadioButtons
@@ -51,7 +52,8 @@ class MainActivity : AppCompatActivity() {
                         RadioButtons,
                         AppBars,
                         Tabs,
-                        Tags
+                        Tags,
+                        Cards
                     )
                 }
                 NavHost(navController = navController, startDestination = "dashboard") {
