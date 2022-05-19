@@ -107,9 +107,9 @@ object VitaminCards {
                     painter = painter,
                     contentDescription = imageContentDescription,
                     isSideImage = true,
-                    modifier = Modifier.weight(1f).aspectRatio(1f)
+                    modifier = Modifier.weight(weight = 1f).aspectRatio(ratio = 1f)
                 )
-                Box(Modifier.weight(3f)) {
+                Box(Modifier.weight(weight = 3f)) {
                     SideImageContent.content()
                 }
             }
@@ -175,7 +175,6 @@ internal fun CardDescription(
     text: String,
     modifier: Modifier = Modifier,
     buttonText: String? = null,
-    isSideImage: Boolean = false,
     onButtonClick: (() -> Unit)? = null
 ) {
     Column(
@@ -207,6 +206,7 @@ enum class VitaminCardImageScale {
     Fit, Full
 }
 
+@SuppressWarnings("MagicNumber")
 @Composable
 fun Modifier.withGradient(color: Color) = this.drawWithCache {
     onDrawWithContent {

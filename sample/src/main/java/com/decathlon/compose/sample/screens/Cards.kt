@@ -38,7 +38,7 @@ object Cards : Screen {
     override val navigationKey: String
         get() = "Cards"
 
-    @SuppressWarnings("LongMethod")
+    @SuppressWarnings("LongMethod", "MaxLineLength")
     @Composable
     override fun Screen() {
         val context = LocalContext.current
@@ -64,7 +64,7 @@ object Cards : Screen {
                     VitaminCards.SideImage(
                         painter = rememberAsyncImagePainter(
                             "https://picsum.photos/400/400",
-                            placeholder = painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
+                            placeholder = painterResource(id = R.drawable.card_placeholder)
                         ),
                         imageContentDescription = "Red bike with nice blue bell",
                         content = {
@@ -83,7 +83,7 @@ object Cards : Screen {
                     VitaminCards.SideImage(
                         painter = rememberAsyncImagePainter(
                             "https://picsum.photos/400/400",
-                            placeholder = painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
+                            placeholder = painterResource(id = R.drawable.card_placeholder)
                         ),
                         imageContentDescription = "Red bike with nice blue bell",
                         content = {
@@ -99,7 +99,7 @@ object Cards : Screen {
                     VitaminCards.SideImage(
                         painter = rememberAsyncImagePainter(
                             "https://picsum.photos/200/200",
-                            placeholder = painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
+                            placeholder = painterResource(id = R.drawable.card_placeholder)
                         ),
                         imageContentDescription = "Red bike with nice blue bell",
                         content = {
@@ -143,7 +143,7 @@ object Cards : Screen {
                         painter = rememberAsyncImagePainter(
                             "https://picsum.photos/300/200",
                             placeholder =
-                            painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
+                            painterResource(id = R.drawable.card_placeholder)
                         ),
                         contentDescription = "We should set here a description " +
                             "of the content if not decorative, otherwise null",
@@ -171,7 +171,7 @@ object Cards : Screen {
                         painter = rememberAsyncImagePainter(
                             "https://picsum.photos/300/200",
                             placeholder =
-                            painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
+                            painterResource(id = R.drawable.card_placeholder)
                         ),
                         contentDescription = "We should set here a description " +
                             "of the content if not decorative, otherwise null",
@@ -205,7 +205,7 @@ object Cards : Screen {
                         painter = rememberAsyncImagePainter(
                             "https://picsum.photos/300/200",
                             placeholder =
-                            painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
+                            painterResource(id = R.drawable.card_placeholder)
                         ),
                         contentDescription = "We should set here a description " +
                             "of the content if not decorative, otherwise null",
@@ -224,7 +224,7 @@ object Cards : Screen {
                         painter = rememberAsyncImagePainter(
                             "https://picsum.photos/300/200",
                             placeholder =
-                            painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
+                            painterResource(id = R.drawable.card_placeholder)
                         ),
                         contentDescription = "We should set here a description " +
                             "of the content if not decorative, otherwise null",
@@ -244,7 +244,7 @@ object Cards : Screen {
                         painter = rememberAsyncImagePainter(
                             "https://picsum.photos/300/200",
                             placeholder =
-                            painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
+                            painterResource(id = R.drawable.card_placeholder)
                         ),
                         contentDescription = "We should set here a description " +
                             "of the content if not decorative, otherwise null",
@@ -277,7 +277,7 @@ object Cards : Screen {
                         painter = rememberAsyncImagePainter(
                             "https://picsum.photos/300/200",
                             placeholder =
-                            painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
+                            painterResource(id = R.drawable.card_placeholder)
                         ),
                         contentDescription = "We should set here a description " +
                             "of the content if not decorative, otherwise null",
@@ -312,7 +312,7 @@ object Cards : Screen {
                         painter = rememberAsyncImagePainter(
                             "https://picsum.photos/300/200",
                             placeholder =
-                            painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
+                            painterResource(id = R.drawable.card_placeholder)
                         ),
                         contentDescription = "We should set here a description " +
                             "of the content if not decorative, otherwise null",

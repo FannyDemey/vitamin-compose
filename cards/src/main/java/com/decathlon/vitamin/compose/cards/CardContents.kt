@@ -38,8 +38,7 @@ object SideImageContent {
         CardDescription(
             color = VitaminTheme.colors.vtmnContentPrimary,
             title = title,
-            text = text,
-            isSideImage = true
+            text = text
         )
     }
 }

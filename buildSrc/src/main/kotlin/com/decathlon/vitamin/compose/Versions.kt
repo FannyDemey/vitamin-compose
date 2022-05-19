@@ -1,5 +1,7 @@
 package com.decathlon.vitamin.compose
 
+import org.gradle.kotlin.dsl.version
+
 object Versions {
     object AndroidConfig {
         const val minSdk = 21
@@ -23,6 +25,10 @@ object Versions {
     object Accompanist {
         const val systemuicontroller = "0.21.3-beta"
     }
+
+    object Test {
+        const val testRules = "1.4.0"
+    }
 }
 
 object Dependencies {
@@ -42,6 +48,8 @@ object Dependencies {
         const val activity = "androidx.activity:activity-compose:${Versions.Compose.activity}"
         const val navigation = "androidx.navigation:navigation-compose:${Versions.Compose.navigation}"
         const val coil = "io.coil-kt:coil-compose:${Versions.Compose.coil}"
+        const val test = "androidx.compose.ui:ui-test-junit4:${Versions.Compose.library}"
+        const val testManifest = "androidx.compose.ui:ui-test-manifest:${Versions.Compose.library}"
     }
     object Accompanist {
         const val systemuicontroller = "com.google.accompanist:accompanist-systemuicontroller:${Versions.Accompanist.systemuicontroller}"
@@ -49,5 +57,8 @@ object Dependencies {
     object Vitamin {
         const val icons = "com.decathlon.vitamin:foundation-icons:${Versions.vitamin}"
         const val assets = "com.decathlon.vitamin:foundation-assets:${Versions.vitamin}"
+    }
+    object Test {
+        const val testRules = "androidx.test:rules:${Versions.Test.testRules}"
     }
 }

@@ -8,7 +8,6 @@ import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import coil.compose.rememberAsyncImagePainter
 import com.decathlon.vitamin.compose.cards.CardActionItem
 import com.decathlon.vitamin.compose.cards.R
 import com.decathlon.vitamin.compose.cards.VitaminCards
@@ -19,11 +18,8 @@ import com.decathlon.vitamin.compose.foundation.VitaminTheme
 fun previewSideCardImageTitleAndText() {
     VitaminTheme {
         VitaminCards.SideImage(
-            painter = rememberAsyncImagePainter(
-                "https://picsum.photos/400/400",
-                placeholder = painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
-            ),
-            imageContentDescription = "Red bike with nice blue bell",
+            painter = painterResource(id = R.drawable.card_placeholder),
+            imageContentDescription = "Loading image in progress",
             content = {
                 TitleAndText(
                     title = "Card Side",
@@ -42,11 +38,8 @@ fun previewSideCardImageTitleAndText() {
 fun previewSideCardImageCustomContent() {
     VitaminTheme {
         VitaminCards.SideImage(
-            painter = rememberAsyncImagePainter(
-                "https://picsum.photos/400/400",
-                placeholder = painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
-            ),
-            imageContentDescription = "Red bike with nice blue bell",
+            painter = painterResource(id = R.drawable.card_placeholder),
+            imageContentDescription = "Loading image in progress",
             content = {
                 Column {
                     Text(text = "Custom content")
@@ -62,11 +55,8 @@ fun previewSideCardImageCustomContent() {
 fun previewSideCardImageWithActions() {
     VitaminTheme {
         VitaminCards.SideImage(
-            painter = rememberAsyncImagePainter(
-                "https://picsum.photos/200/200",
-                placeholder = painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
-            ),
-            imageContentDescription = "Red bike with nice blue bell",
+            painter = painterResource(id = R.drawable.card_placeholder),
+            imageContentDescription = "Loading image in progress",
             content = {
                 TitleAndText(
                     title = "Card Title",

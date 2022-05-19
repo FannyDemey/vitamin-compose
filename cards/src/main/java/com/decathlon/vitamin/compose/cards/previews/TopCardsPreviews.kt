@@ -10,7 +10,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import coil.compose.rememberAsyncImagePainter
 import com.decathlon.vitamin.compose.cards.R
 import com.decathlon.vitamin.compose.cards.VitaminCardImageScale
 import com.decathlon.vitamin.compose.cards.VitaminCards
@@ -23,11 +22,7 @@ import com.decathlon.vitamin.compose.tags.VitaminTagColors
 fun PreviewCardsTopImage() {
     VitaminTheme {
         VitaminCards.TopImage(
-            painter = rememberAsyncImagePainter(
-                "https://picsum.photos/300/200",
-                placeholder =
-                painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
-            ),
+            painter = painterResource(id = R.drawable.card_placeholder),
             contentDescription = "We should set here a description " +
                 "of the content if not decorative, otherwise null",
             imageScale = VitaminCardImageScale.Full,
@@ -47,11 +42,7 @@ fun PreviewCardsTopImage() {
 fun PreviewCardsTopImageCustomContent() {
     VitaminTheme {
         VitaminCards.TopImage(
-            painter = rememberAsyncImagePainter(
-                "https://picsum.photos/300/200",
-                placeholder =
-                painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
-            ),
+            painter = painterResource(id = R.drawable.card_placeholder),
             contentDescription = "We should set here a description " +
                 "of the content if not decorative, otherwise null",
             content = {
@@ -68,11 +59,7 @@ fun PreviewCardsTopImageCustomContent() {
 fun PreviewCardsTopImageWithOverlay() {
     VitaminTheme {
         VitaminCards.TopImage(
-            painter = rememberAsyncImagePainter(
-                "https://picsum.photos/300/200",
-                placeholder =
-                painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
-            ),
+            painter = painterResource(id = R.drawable.card_placeholder),
             contentDescription = "We should set here a description " +
                 "of the content if not decorative, otherwise null",
             content = {
@@ -104,11 +91,7 @@ fun PreviewCardsTopImageWithOverlay() {
 fun PreviewCardsTopImageWithOverlayBottomEnd() {
     VitaminTheme {
         VitaminCards.TopImage(
-            painter = rememberAsyncImagePainter(
-                "https://picsum.photos/300/200",
-                placeholder =
-                painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
-            ),
+            painter = painterResource(id = R.drawable.card_placeholder),
             contentDescription = "We should set here a description " +
                 "of the content if not decorative, otherwise null",
             content = {
@@ -142,11 +125,7 @@ fun PreviewCardsTopImageWithOverlayBottomEnd() {
 fun PreviewCardsTopImageClickable() {
     VitaminTheme {
         VitaminCards.TopImage(
-            painter = rememberAsyncImagePainter(
-                "https://picsum.photos/300/200",
-                placeholder =
-                painterResource(id = R.drawable.vtmn_payment_mastercard_id_check)
-            ),
+            painter = painterResource(id = R.drawable.card_placeholder),
             contentDescription = "We should set here a description " +
                 "of the content if not decorative, otherwise null",
             content = {

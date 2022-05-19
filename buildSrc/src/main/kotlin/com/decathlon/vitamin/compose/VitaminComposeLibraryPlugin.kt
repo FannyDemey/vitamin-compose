@@ -20,7 +20,6 @@ class VitaminComposeLibraryPlugin : Plugin<Project> {
             add("debugImplementation", Dependencies.AndroidX.lifecycleViewModel)
             add("debugImplementation", Dependencies.AndroidX.savedstate)
             add("debugImplementation", Dependencies.AndroidX.core)
-
         }
     }
 }
@@ -33,6 +32,8 @@ internal fun Project.configureAndroid() = this.extensions.getByType(LibraryExten
         vectorDrawables {
             useSupportLibrary = true
         }
+        testApplicationId = "com.decathlon.vitamin.compose.test"
+        testInstrumentationRunner = "com.karumi.shot.ShotTestRunner"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
